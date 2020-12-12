@@ -1,13 +1,3 @@
-def turn(board, index, token)
-  display(board)
-  input_to_index(index)
-  if valid_move?(board, index) == true
-    move(board, index, token)
-  else turn(board, index, token)
-  end 
-end 
-    
-
 def display_board(board)
   puts "#{board[0]},#{board[1]},#{board[2]}"
   puts "---------"
@@ -33,5 +23,14 @@ def valid_move?(board, index)
     return true 
   else 
     return false
+  end 
+end 
+
+def turn(board, index, token)
+  display(board)
+  input_to_index(index)
+  if valid_move?(board, index) == true
+    move(board, index, token)
+  else turn(board, index, token)
   end 
 end 
