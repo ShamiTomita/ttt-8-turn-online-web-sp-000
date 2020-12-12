@@ -3,9 +3,10 @@ def turn(board, index, token)
   input_to_index(index)
   if valid_move?(board, index) == true
     move(board, index, token)
-  else move(board, index, token)
-    
+  else turn(board, index, token)
+  end 
 end 
+    
 
 def display_board(board)
   puts "#{board[0]},#{board[1]},#{board[2]}"
