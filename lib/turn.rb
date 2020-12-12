@@ -27,7 +27,7 @@ def valid_move?(board, index)
 end 
 
 def turn(board, input, token)
-  display(board)
+  puts "Please "
   input = gets.strip
   input = index
   input_to_index(index)
