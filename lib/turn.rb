@@ -26,10 +26,11 @@ def valid_move?(board, index)
   end 
 end 
 
-def turn(board, index, token)
+def turn(board, input, token)
   display(board)
-  
-  input_to_index(input)
+  input = gets.strip
+  input = index
+  input_to_index(index)
   if valid_move?(board, index) == true
     move(board, index, token)
   else turn(board, index, token)
