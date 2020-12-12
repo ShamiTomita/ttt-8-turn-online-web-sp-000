@@ -32,7 +32,7 @@ def turn(board)
   input_to_index(input)
   index = input.to_i
   if valid_move?(board, index) 
-    move(board, index, token)
+    move(board, index, token = "X")
     return display(board)
   else turn(board)
   end 
