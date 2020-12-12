@@ -34,7 +34,5 @@ def turn(board)
   if valid_move?(board, index) 
     move(board, index, token = "X")
     return display(board)
-  elsif !valid_move?(index) 
-  turn(board)
 end 
 end 
