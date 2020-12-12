@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
-puts "Welcome to Tic Tac Toe"
+puts "Welcome to Tic Tac Toe!"
 display(board)
+"Please enter 1-9:"
+input = gets.strip
+input = index
+turn(board)
