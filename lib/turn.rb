@@ -1,7 +1,10 @@
 def turn(board, index, token)
   display(board)
   input_to_index(index)
-  move(board, index, token)
+  if valid_move?(board, index) == true
+    move(board, index, token)
+  else move(board, index, token)
+    
 end 
 
 def display_board(board)
