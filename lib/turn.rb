@@ -1,4 +1,6 @@
-def turn(board)
+def turn(board, index)
+  display(board)
+  input_to_index(index)
 end 
 
 def display_board(board)
